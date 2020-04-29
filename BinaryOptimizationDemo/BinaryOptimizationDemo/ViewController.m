@@ -1,25 +1,11 @@
-# BinaryRearrangeDemo
+//
+//  ViewController.m
+//  BinaryOptimizationDemo
+//
+//  Created by 张延深 on 2020/4/29.
+//  Copyright © 2020 张延深. All rights reserved.
+//
 
-参考地址：[iOS 优化篇 - 启动优化之Clang插桩实现二进制重排](http://www.zyiz.net/tech/detail-127196.html)
-
-### Order File
-
-`Build Settings` -> `Order File`
-
-<img src="./imgs/1.png" />
-
-### Write Link Map File
-
-将 `Build Settings` -> `Write Link Map File` 改为 `YES`
-
-<img src="./imgs/2.png" />
-
-
-### Clang静态插桩
-
-完整代码
-
-```Objective-C
 #import "ViewController.h"
 #import <dlfcn.h>
 #import <libkern/OSAtomic.h>
@@ -123,4 +109,3 @@ typedef struct{
 } SymbolNode;
 
 @end
-```
