@@ -1,0 +1,2 @@
+# BinaryRearrangeDemo
+通过二进制重排优化App启动速度
